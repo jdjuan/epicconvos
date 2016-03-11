@@ -1,0 +1,17 @@
+Presentation:
+-"Being yourself is enough to have a great conversation. But sometimes a little inspiration can come in very handy"
+-Epic Convos: "Make your conversations epic"
+
+User Cases:
+-Allow the user to upvote or downvote convos
+-Allow the user to submit a convo: I will publish it myself and send the url
+-Allow the user to find a convo using id url based
+-Allow the user to send feedback
+
+Mockup:
+-Introduction Text
+-Context
+-Conv
+-Authorship
+-Upvote and downvote buttons
+-Form to submit feedback or an epic conv

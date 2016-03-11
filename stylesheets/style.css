@@ -1,1 +1,121 @@
 @import url(https://fonts.googleapis.com/css?family=Raleway:400,500,600);
+/* line 11, ../sass/style.scss */
+body {
+  text-align: center;
+  text-align: -moz-center;
+  text-align: -webkit-center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100vw;
+  height: 100vh;
+}
+
+/* line 17, ../sass/style.scss */
+.container {
+  background-color: #E53A40;
+  width: inherit;
+  height: inherit;
+}
+
+/* line 23, ../sass/style.scss */
+.title {
+  -moz-box-shadow: #712625 0px 2px 12px 2px;
+  -webkit-box-shadow: #712625 0px 2px 12px 2px;
+  box-shadow: #712625 0px 2px 12px 2px;
+  color: #fff;
+  font-size: 2.7rem;
+  font-weight: 400;
+  font-family: "Raleway", sans-serif;
+  -moz-border-radius-bottomleft: 25px;
+  -webkit-border-bottom-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+  -moz-border-radius-bottomright: 25px;
+  -webkit-border-bottom-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  background-color: #30A9DE;
+  width: 70%;
+  padding: 2.5rem;
+  padding-top: 1.7rem;
+}
+@media (max-width: 1272px) {
+  /* line 23, ../sass/style.scss */
+  .title {
+    width: 90%;
+    padding: 2.1rem;
+    padding-top: 1.3rem;
+  }
+}
+@media (max-width: 985px) {
+  /* line 23, ../sass/style.scss */
+  .title {
+    width: 100%;
+    padding: 1.7rem;
+    padding-top: 0.9rem;
+    font-size: 2.4rem;
+  }
+}
+@media (max-width: 791px) {
+  /* line 23, ../sass/style.scss */
+  .title {
+    padding: 1.3rem;
+    padding-top: 0.5rem;
+    font-size: 2rem;
+  }
+}
+@media (max-width: 663px) {
+  /* line 23, ../sass/style.scss */
+  .title {
+    padding: 0.4rem;
+    padding-bottom: 1rem;
+    font-size: 1.65rem;
+  }
+}
+
+/* line 55, ../sass/style.scss */
+.voteColumn {
+  margin-top: 12rem;
+}
+
+/* line 59, ../sass/style.scss */
+.voteText {
+  color: #fff;
+  font-size: 2.5rem;
+  font-weight: 500;
+  font-family: "Raleway", sans-serif;
+  margin: 1rem;
+}
+
+/* line 64, ../sass/style.scss */
+.vote {
+  -moz-box-shadow: #712625 0px 2px 12px 2px;
+  -webkit-box-shadow: #712625 0px 2px 12px 2px;
+  box-shadow: #712625 0px 2px 12px 2px;
+  -moz-border-radius: 100px;
+  -webkit-border-radius: 100px;
+  border-radius: 100px;
+  width: 10rem;
+  height: 10rem;
+  color: #fff;
+  border: solid 5px;
+  cursor: pointer;
+  padding: 1rem;
+  margin: 1rem;
+  margin-bottom: 0.3rem;
+}
+/* line 75, ../sass/style.scss */
+.vote:focus, .vote:active {
+  -moz-box-shadow: #712625 0px 0px 0px 0px;
+  -webkit-box-shadow: #712625 0px 0px 0px 0px;
+  box-shadow: #712625 0px 0px 0px 0px;
+  margin-top: 1.2rem;
+  margin-bottom: 0.1rem;
+}
+
+/* line 83, ../sass/style.scss */
+.upvotes {
+  color: #fff;
+  font-size: 4rem;
+  font-weight: 400;
+  font-family: "Raleway", sans-serif;
+  font-family: monospace;
+}

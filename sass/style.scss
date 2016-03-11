@@ -3,3 +3,84 @@
 @import "compass/css3";
 @import "compass/utilities";
 @import "include-media";
+
+* {
+	// font-family: 'Raleway', sans-serif !important;
+}
+
+body{
+	@include center-aligner();
+	width: 100vw;
+	height: 100vh;
+}
+
+.container{
+	background-color: $red;
+	width: inherit;
+	height: inherit;
+}
+
+.title{
+	@include box-shadow($shadowColor 0px 2px 12px 2px);
+	@include font-style($white, 2.7rem, 400);
+	@include border-bottom-radius(25px);
+	background-color: $blue;
+	width: 70%;
+	padding: 2.5rem;
+	padding-top: 1.7rem;
+	@include media("<large"){
+		width: 90%;
+		padding: 2.1rem;
+		padding-top: 1.3rem;
+	}
+	@include media("<=medium"){
+		width: 100%;
+		padding: 1.7rem;
+		padding-top: 0.9rem;
+		font-size: 2.4rem;
+	}
+	@include media("<=small"){
+		padding: 1.3rem;
+		padding-top: 0.5rem;
+		font-size: 2rem;
+	}
+	@include media("<=very-small"){
+		padding: 0.4rem;
+		padding-bottom: 1rem;
+		font-size: 1.65rem;
+	}
+}
+
+
+.voteColumn{
+	margin-top: 12rem;
+}
+
+.voteText{
+	@include font-style($white, 2.5rem, 500);
+	margin: 1rem;
+}
+
+.vote{
+	@include box-shadow($shadowColor 0px 2px 12px 2px);
+	@include border-radius(100px);
+	width: 10rem;
+	height: 10rem;
+	color: $white;
+	border: solid 5px;
+	cursor: pointer;
+	padding: 1rem;
+	margin: 1rem;
+	margin-bottom: 0.3rem;
+	&:focus, &:active{
+		@include box-shadow($shadowColor 0px 0px 0px 0px);
+		// @include box-shadow($shadowColor 0px 0px 0px 0px);
+		margin-top: 1.2rem;
+		margin-bottom: 0.1rem;
+	}
+}
+
+.upvotes{
+	@include font-style($white, 4rem, 400);
+	font-family: monospace;
+}

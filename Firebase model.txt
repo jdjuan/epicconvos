@@ -1,0 +1,25 @@
+users:
+-key:
+--username
+--mail
+--convos: key:true, key:true
+
+convos:
+-key{
+--author:string
+--context:string
+--upvotes:number
+--downvotes:number
+--convo{
+	-key{
+	--you: boolean
+	--text:string
+	},
+	.
+	.
+	.
+}
+}
+
+PS: In order to set the upvotes and downvotes I need transactional query.
+
