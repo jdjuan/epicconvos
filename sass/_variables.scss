@@ -1,5 +1,12 @@
 //Google Font
 @import url(https://fonts.googleapis.com/css?family=Raleway:400,500,600);
+@font-face {
+font-family: HelveticaLight;
+// src: url("../fonts/helvetica/HelveticaNeue-Thin.otf") format("opentype");
+src: url("../fonts/helvetica/HelveticaNeue-Light.otf") format("opentype");
+// src: url("../fonts/helvetica/HelveticaNeue-Thin.otf") format("opentype");
+}
+
 
 // Variables to quickly and easily change the accent colour across the site.
 // $red : #E71D36;
@@ -14,6 +21,9 @@ $blue: #30A9DE;
 $gray : #EFFFE9;
 $darkBlue : #011627;
 $shadowColor: #712625;
+
+$lightBlue: #D5DBEB;
+$notYou: #D5DBEB;
 
 // Variables to quickly and easily change the accent colour across the site.
 // $white : #e1eef6;
