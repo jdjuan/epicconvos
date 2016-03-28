@@ -6,7 +6,7 @@ users:
 
 convos:
 -key{
---author:string
+--author:string (key)
 --context:string
 --upvotes:number
 --downvotes:number

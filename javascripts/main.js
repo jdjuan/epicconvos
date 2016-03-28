@@ -1,5 +1,5 @@
 $(function() {
-	var ref = new Firebase('https://epiclines.firebaseio.com/');
+	var ref = new Firebase('https://epicconvos.firebaseio.com/');
 	var convosRef = ref.child("convos");
 	// var convo = convosRef.push({
 	// 	author: "Juan",

@@ -11,7 +11,30 @@ User Cases:
 Mockup:
 -Introduction Text
 -Context
--Conv
+-Convo
 -Authorship
 -Upvote and downvote buttons
--Form to submit feedback or an epic conv
+-Fork me button
+-Form to submit feedback
+-Form to submit an epic convo
+
+Future:
+-Allow users to upload their own convos and manage them
+-Create urls for users and specific convos
+-Allow the user to upload a picture and get the text from it
+-Allow users to set the theme of the convo: Tinder, iMessage, Messenger, WhatsApp
+-Allow users to use a different set of emoticons
+-Improve upvote and downvote precision quality
+-Create an algorithm to better sort most epic convos
+--Even farther:
+---Allow users to follow other users
+---Let users be notified when they upload a conversation
+
+Advantages:
+-Inspiration for your own conversations
+-When you want to show off a conversation, you will no longer need to blur the pictures or anything else.
+-It will reach a wider community, instead of just earning likes on facebook
+
+Disadvantages:
+-It will not feel like a real conversation since it is not a screencapture
+--This can be solved by imititating the look&feel as much as possible
