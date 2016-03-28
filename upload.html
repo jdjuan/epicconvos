@@ -1,0 +1,70 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<!-- Boostrap Styles -->
+	<link href="stylesheets/styles.css" rel="stylesheet" type="text/css" />
+	<!-- Jquery CDN -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+	<!-- Latest compiled and minified Bootstrap JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+	<!-- Firebase JavaScript -->
+	<script src='https://cdn.firebase.com/js/client/2.2.1/firebase.js'></script>
+	<!-- Custom Javascript -->
+	<script src="javascripts/main.js"></script>
+	<style>
+		td {
+			text-align: center;
+		}
+		body{
+			text-align: center;
+		}
+		form{
+			display: inline-block;
+			width: 80%;
+			text-align: center;
+		}
+		table{
+			width: 80%;
+			border-collapse:separate; 
+			border-spacing:1em;
+			display: inherit;
+		}
+	</style>
+</head>
+<body>
+	<h1>CONVO FORM</h1><br>
+	<button type="button" onClick="addRow()" class="btn btn-success">Add</button>
+	<button type="button" onClick="submitConvo()" class="btn btn-success">Submit</button><br><br>
+	<form>
+		<table>
+			<tr>
+				<td colspan="3">
+				<input type="text" class="form-control" id="context" placeholder="Context">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<div class="col-xs-10">
+						<label class="radio-inline">
+							<input type="radio" name="radio1" value="you"> You
+						</label>
+					</div>
+				</td>
+				<td>
+					<div class="col-xs-10">
+						<label class="radio-inline">
+							<input type="radio" name="radio1" value="notYou"> Not you
+						</label>
+					</div>
+				</td> 
+				<td>
+					<div class="col-xs-12">
+						<input type="text" class="form-control" id="message1" placeholder="Message">
+					</div>
+				</td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>
