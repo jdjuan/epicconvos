@@ -11,7 +11,7 @@
 	<!-- Firebase JavaScript -->
 	<script src='https://cdn.firebase.com/js/client/2.2.1/firebase.js'></script>
 	<!-- Custom Javascript -->
-	<script src="javascripts/main.js"></script>
+	<script src="javascripts/update.js"></script>
 	<style>
 		td {
 			text-align: center;
@@ -34,20 +34,19 @@
 </head>
 <body>
 	<h1>CONVO FORM</h1><br>
-	<button type="button" onClick="addRow()" class="btn btn-success">Add</button>
-	<button type="button" onClick="submitConvo()" class="btn btn-success">Submit</button><br><br>
-	<form>
+	<button type="button" onClick="addRow()" class="btn btn-success">Add</button><br><br><br>
+	<form id="formConvo">
 		<table>
-			<tr>
-				<td colspan="3">
-				<input type="text" class="form-control" id="context" placeholder="Context">
+			<tr id="tr1">
+				<td colspan="4">
+					<input type="text" class="form-control" id="context" placeholder="Context" required>
 				</td>
 			</tr>
-			<tr>
+			<tr id="tr2">
 				<td>
 					<div class="col-xs-10">
 						<label class="radio-inline">
-							<input type="radio" name="radio1" value="you"> You
+							<input type="radio" name="radio1" value="you" required> You
 						</label>
 					</div>
 				</td>
@@ -60,11 +59,15 @@
 				</td> 
 				<td>
 					<div class="col-xs-12">
-						<input type="text" class="form-control" id="message1" placeholder="Message">
+						<input type="text" class="form-control" id="message1" placeholder="Message" required>
 					</div>
 				</td>
+				<td>
+					<button type="button" onClick="removeRow(2)" class="btn btn-danger">X</button>
+				</td>
 			</tr>
-		</table>
+		</table><br><br>
+		<input type="submit" class="btn btn-success" value="Submit">
 	</form>
 </body>
 </html>
