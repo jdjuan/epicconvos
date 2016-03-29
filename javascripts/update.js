@@ -38,7 +38,7 @@ function submitConvo(){
 	for (var i = 1; i <= messageIndex; i++) {
 		var message = $("#message"+i);
 		if (message.length){
-			var you=$("input[type='radio'][name='radio"+i+"']:checked").val()=="you";
+			var you=$("input[type='radio'][name='radio"+i+"']:checked").val()==="you";
 			convoRef.push({
 				you: you,
 				message: message.val()

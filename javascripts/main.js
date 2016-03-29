@@ -1,10 +1,15 @@
 $(function(){
-	// Get a database reference to our posts
-	var ref = new Firebase("https://epicconvos.firebaseio.com/");
-// Attach an asynchronous callback to read the data at our posts reference
-ref.on("value", function(snapshot) {
-	console.log(snapshot.val());
-}, function (errorObject) {
-	console.log("The read failed: " + errorObject.code);
-});
+	var ref = new Firebase("https://epicconvos.firebaseio.com/convos");
+	ref.on("value", function(snapshot) {
+		snapshot.forEach(function(data) {
+			$(".context").text(data.val().context);
+			data.child("messages").forEach(function(message){
+				var html = '<li class="line '+((message.val().you)?"you":"notYou")+'">'+message.val().message+'</li>';
+				html+= '<div class="clear"></div>';
+				$("#convoLines").append(html);
+			});
+		});
+	}, function (errorObject) {
+		console.log("The read failed: " + errorObject.code);
+	});
 });
