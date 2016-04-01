@@ -14,9 +14,9 @@ function removeRow(row){
 function addRow(){
 	messageIndex++;
 	var html='<tr id="tr'+messageIndex+'"><td><div class="col-xs-10"><label class="radio-inline">';
-	html+= '<input type="radio" name="radio'+messageIndex+'" id="inlineRadio1" value="option1" required> You </label>';
+	html+= '<input type="radio" name="radio'+messageIndex+'" id="inlineRadio1" value="you" required> You </label>';
 	html+= '</div></td><td><div class="col-xs-10"><label class="radio-inline">';
-	html+= '<input type="radio" name="radio'+messageIndex+'" id="inlineRadio2" value="option2"> Not you</label>';
+	html+= '<input type="radio" name="radio'+messageIndex+'" id="inlineRadio2" value="notYou"> Not you</label>';
 	html+= '</div></td><td><div class="col-xs-12">'
 	html+= '<input type="text" class="form-control" id="message'+messageIndex+'" placeholder="Message" required>';
 	html+= '</div></td><td><button type="button" onClick="removeRow('+messageIndex+')" class="btn btn-danger">X</button></td>';

@@ -22,14 +22,10 @@ html, body {
 }
 
 /* line 19, ../sass/style.scss */
-.title {
+.titleWrapper {
   -moz-box-shadow: #712625 0px 2px 12px 2px;
   -webkit-box-shadow: #712625 0px 2px 12px 2px;
   box-shadow: #712625 0px 2px 12px 2px;
-  color: #fff;
-  font-size: 3.7rem;
-  font-weight: bolder;
-  font-family: "Raleway", sans-serif;
   -moz-border-radius-bottomleft: 25px;
   -webkit-border-bottom-left-radius: 25px;
   border-bottom-left-radius: 25px;
@@ -43,28 +39,39 @@ html, body {
 }
 @media (max-width: 985px) {
   /* line 19, ../sass/style.scss */
-  .title {
+  .titleWrapper {
     width: 80%;
   }
 }
 @media (max-width: 791px) {
   /* line 19, ../sass/style.scss */
-  .title {
+  .titleWrapper {
     width: 85%;
   }
 }
 
-/* line 51, ../sass/style.scss */
-.mainContainer {
-  margin-top: 4rem;
+/* line 36, ../sass/style.scss */
+.title {
+  color: #fff;
+  font-size: 3.7rem;
+  font-weight: bolder;
+  font-family: "Raleway", sans-serif;
 }
 
-/* line 55, ../sass/style.scss */
+/* line 39, ../sass/style.scss */
+.subTitle {
+  color: #fff;
+  font-size: 3rem;
+  font-weight: 100;
+  font-family: "Raleway", sans-serif;
+}
+
+/* line 47, ../sass/style.scss */
 .voteColumn {
   margin-top: 12rem;
 }
 
-/* line 59, ../sass/style.scss */
+/* line 51, ../sass/style.scss */
 .voteText {
   color: #fff;
   font-size: 2.5rem;
@@ -73,7 +80,7 @@ html, body {
   margin: 1rem;
 }
 
-/* line 64, ../sass/style.scss */
+/* line 56, ../sass/style.scss */
 .vote {
   -moz-box-shadow: #712625 0px 2px 12px 2px;
   -webkit-box-shadow: #712625 0px 2px 12px 2px;
@@ -90,7 +97,7 @@ html, body {
   margin: 1rem;
   margin-bottom: 0.3rem;
 }
-/* line 75, ../sass/style.scss */
+/* line 67, ../sass/style.scss */
 .vote:focus, .vote:active {
   -moz-box-shadow: #712625 0px 0px 0px 0px;
   -webkit-box-shadow: #712625 0px 0px 0px 0px;
@@ -99,7 +106,7 @@ html, body {
   margin-bottom: 0.1rem;
 }
 
-/* line 82, ../sass/style.scss */
+/* line 74, ../sass/style.scss */
 .upvotes {
   color: #fff;
   font-size: 4rem;
@@ -108,7 +115,7 @@ html, body {
   font-family: monospace;
 }
 
-/* line 87, ../sass/style.scss */
+/* line 79, ../sass/style.scss */
 .convoContainer {
   -moz-box-shadow: #712625 0px 2px 12px 2px;
   -webkit-box-shadow: #712625 0px 2px 12px 2px;
@@ -119,7 +126,7 @@ html, body {
   overflow: hidden;
 }
 
-/* line 95, ../sass/style.scss */
+/* line 87, ../sass/style.scss */
 .context {
   color: #fff;
   font-size: 2.2rem;
@@ -134,7 +141,7 @@ html, body {
   padding: 1rem;
 }
 
-/* line 102, ../sass/style.scss */
+/* line 94, ../sass/style.scss */
 .convo {
   background-color: #fff;
   overflow-x: hidden;
@@ -142,7 +149,7 @@ html, body {
   height: 38rem;
 }
 
-/* line 110, ../sass/style.scss */
+/* line 102, ../sass/style.scss */
 .line {
   font-family: "HelveticaLight";
   word-wrap: break-word;
@@ -152,7 +159,7 @@ html, body {
   max-width: 74%;
 }
 
-/* line 119, ../sass/style.scss */
+/* line 111, ../sass/style.scss */
 .you {
   position: relative;
   padding: 10px 20px;
@@ -191,7 +198,7 @@ html, body {
   -webkit-transform: translate(-30px, -2px);
 }
 
-/* line 123, ../sass/style.scss */
+/* line 115, ../sass/style.scss */
 .notYou {
   position: relative;
   padding: 10px 20px;
@@ -231,12 +238,12 @@ html, body {
   -webkit-transform: translate(-30px, -2px);
 }
 
-/* line 127, ../sass/style.scss */
+/* line 119, ../sass/style.scss */
 .clear {
   clear: both;
 }
 
-/* line 128, ../sass/style.scss */
+/* line 120, ../sass/style.scss */
 i.em {
   margin-top: -4px;
 }

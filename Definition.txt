@@ -1,6 +1,6 @@
 Presentation:
 -"Being yourself is enough to have a great conversation. But sometimes a little inspiration can come in very handy"
--Epic Convos: "Make your conversations epic"
+-Epic Convos: "Make your next conversation epic"
 
 User Cases:
 -Allow the user to upvote or downvote convos
